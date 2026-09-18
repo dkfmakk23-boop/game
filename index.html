@@ -39,7 +39,7 @@
   /* ── SOBOKI CHARACTER ── */
   #soboki-char{
     position:absolute;
-    bottom:180px; left:50%;
+    bottom:150px; left:50%;
     transform:translateX(-50%);
     z-index:10;
     width:160px; height:160px;
@@ -180,6 +180,23 @@
     background:#000;border:3px solid var(--ui-border);padding:14px 18px;
   }
   .link-icon-btn:hover{background:#1a1a2e;}
+  #sub-promo-text{
+    font-size:9px;color:var(--pixel-yellow);text-shadow:2px 2px 0 #000;
+    margin-bottom:14px;text-align:center;line-height:2;
+  }
+  .sub-link-row{display:flex;gap:16px;margin-bottom:14px;justify-content:center;}
+  .sub-link-btn{
+    display:flex;flex-direction:column;align-items:center;
+    text-decoration:none;cursor:pointer;
+    background:#000;border:3px solid var(--ui-border);padding:12px 14px;
+  }
+  .sub-link-btn:hover{background:#1a1a2e;}
+  .sub-link-icon{font-size:26px;line-height:1;margin-bottom:4px;}
+  .sub-link-label{font-size:7px;color:#fff;line-height:1.6;text-align:center;white-space:nowrap;}
+  #survey-note-text{
+    font-size:8px;color:#fff;margin-bottom:18px;text-align:center;line-height:2;
+    max-width:320px;
+  }
   #answer-link-btn{
     background:#1a1a2e;border:3px solid #888;color:#ccc;
     font-family:'Press Start 2P',monospace;font-size:9px;
@@ -292,6 +309,18 @@
         </svg>
       </a>
     </div>
+    <div id="sub-promo-text">'동네정보퐁퐁'을 구독하면<br>수건 증정!</div>
+    <div class="sub-link-row">
+      <a class="sub-link-btn" href="https://youth.seoul.go.kr/mainA.do?WG_V=1789699596656" target="_blank">
+        <span class="sub-link-icon">🔔</span>
+        <span class="sub-link-label">동네정보퐁퐁</span>
+      </a>
+      <a class="sub-link-btn" href="https://ssny.kr/survey/general/survey.asp?strSeq=111" target="_blank">
+        <span class="sub-link-icon">📝</span>
+        <span class="sub-link-label">만족도 조사</span>
+      </a>
+    </div>
+    <div id="survey-note-text">동네정보퐁퐁을 이미 구독 중이시라면?<br>공간 만족도 조사에 참여하고<br>화면을 보여주세요!</div>
     <button id="answer-link-btn" onclick="showAnswers()">📋 정답지 보기</button>
     <button id="retry-btn" onclick="retryGame()">↩ 다시 하기</button>
   </div>
